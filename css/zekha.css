@@ -1,0 +1,216 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Mencegah scrolling horizontal */
+}
+.txt {
+    color: white; /* Mengubah teks menjadi putih */
+    font-size: 20px; /* Ukuran font dapat disesuaikan */
+    font-weight: bold; /* Menebalkan teks */
+}
+/* Hamburger Menu Styling */
+.hamburger {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+/* Dropdown Menu Styling */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    background-color: rgba(43, 43, 43, 0.836);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 9;
+    width: 200px;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu li a:last-child {
+    border-bottom: none;
+}
+
+.menu li a:hover {
+    background-color: #5f54f7;
+}
+
+/* Server Info Styling */
+.server-info {
+    max-width: 800px;
+    margin: 120px auto 50px;
+    background: rgba(255, 255, 255, 0.89);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+}
+
+.server-info h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.server-info h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.server-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px; /* Sesuaikan untuk layar kecil */
+}
+
+table th, table td {
+    padding: 12px 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .hamburger {
+        top: 10px;
+        right: 15px;
+        width: 25px;
+        height: 20px;
+    }
+
+    .menu {
+        top: 40px;
+        right: 10px;
+        width: 150px;
+    }
+
+    .server-info {
+        margin: 100px 10px 50px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px; /* Kurangi ukuran font untuk layar kecil */
+    }
+
+    table th, table td {
+        padding: 8px 5px; /* Sesuaikan padding agar lebih kecil */
+    }
+}
+
+/* Styling untuk informasi server */
+.server-details {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+/* User Info Styling */
+.user-info {
+    margin-bottom: 30px;
+}
+
+.user-info p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Server Info Styling */
+.server-info {
+    background: rgba(43, 43, 43, 0.89);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+}
+
+.server-info h1 {
+    font-size: 24px;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.server-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}

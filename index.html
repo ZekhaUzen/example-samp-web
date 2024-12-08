@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1 class="txt">WELCOME TO</h1>
+        <h1 class="txt">ZEKHA ROLEPLAY</h1>
+    </center>
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- Navigation Menu -->
+    <ul id="menu" class="menu">
+        <li><a href="php/zekha.php">Home</a></li>
+        <li><a href="php/profile.php">Profile</a></li>
+        <li><a href="php/logout.php">Logout</a></li>
+    </ul>
+
+    <div class="profile-info">
+        <h1>RULES</h1>
+        <div class="profile-details">
+            <p class="txt">1. TIDAK BOLEH NGECIT</p>
+            <p class="txt">2. TIDAK BOLEH RTM</p>
+        </div>
+    </div>
+</body>
+</html>
